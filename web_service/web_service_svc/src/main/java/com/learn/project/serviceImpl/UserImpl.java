@@ -1,13 +1,12 @@
 package com.learn.project.serviceImpl;
 
-import java.util.HashMap;
-import java.util.List;
-
+import com.learn.project.dao.IUserMapper;
+import com.learn.project.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.learn.project.dao.IUserMapper;
-import com.learn.project.service.IUserService;
+import java.util.HashMap;
+import java.util.List;
 
 @Component("userServiceImpl")
 public class UserImpl implements IUserService {
@@ -17,13 +16,19 @@ public class UserImpl implements IUserService {
 
     public List<HashMap<String, Object>> findAllUsers() {
         // TODO Auto-generated method stub
-        List<HashMap<String, Object>> rs =  userMapper.findAllUsers();
-        if(rs!=null && rs.size() >0){
-            for(int i=0;i<rs.size() ;i++)
+        List<HashMap<String, Object>> rs = userMapper.findAllUsers();
+        if (rs != null && rs.size() > 0) {
+            for (int i = 0; i < rs.size(); i++)
                 System.out.println(rs.get(i).toString());
-            
+
         }
         return rs;
     }
-    
+
+    public static void main(String[] args) {
+        for (String arg : args) {
+            System.out.println("");
+        }
+    }
+
 }
