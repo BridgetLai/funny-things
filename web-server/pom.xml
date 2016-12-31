@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.learn.project</groupId>
-  <artifactId>web_server</artifactId>
+  <artifactId>web-server</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>web_server</name>
+  <name>web-server</name>
   <url>http://maven.apache.org</url>
 
 
@@ -26,7 +26,7 @@
 
     <dependency>
       <groupId>com.learn.project</groupId>
-      <artifactId>web_service_api</artifactId>
+      <artifactId>web-service-api</artifactId>
       <version>0.0.1-SNAPSHOT</version>
     </dependency>
 
@@ -61,6 +61,6 @@
 
   </dependencies>
   <build>
-    <finalName>web_server</finalName>
+    <finalName>web-server</finalName>
   </build>
 </project>

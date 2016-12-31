@@ -11,8 +11,8 @@
 
    
   <modules>
-      <module>web_service</module>
-	  <module>web_server</module>
+      <module>web-service</module>
+	  <module>web-server</module>
   </modules>
 
 

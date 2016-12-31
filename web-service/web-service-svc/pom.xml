@@ -5,20 +5,20 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.learn.project</groupId>
-		<artifactId>web_service</artifactId>
+		<artifactId>web-service</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
 	<!-- groupId 与 version 会继承 parent -->
-	<artifactId>web_service_svc</artifactId>
-	<name>web_service_svc</name>
+	<artifactId>web-service-svc</artifactId>
+	<name>web-service-svc</name>
 	<url>http://maven.apache.org</url>
 	<packaging>jar</packaging>
 
 	<dependencies>
 		<dependency>
 			<groupId>com.learn.project</groupId>
-			<artifactId>web_service_api</artifactId>
+			<artifactId>web-service-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
