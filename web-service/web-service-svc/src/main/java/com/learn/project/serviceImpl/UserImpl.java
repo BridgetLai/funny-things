@@ -14,6 +14,12 @@ public class UserImpl implements IUserService {
     @Autowired
     private IUserMapper userMapper;
 
+    public static void main(String[] args) {
+        for (String arg : args) {
+            System.out.println("");
+        }
+    }
+
     public List<HashMap<String, Object>> findAllUsers() {
         // TODO Auto-generated method stub
         List<HashMap<String, Object>> rs = userMapper.findAllUsers();
@@ -23,12 +29,6 @@ public class UserImpl implements IUserService {
 
         }
         return rs;
-    }
-
-    public static void main(String[] args) {
-        for (String arg : args) {
-            System.out.println("");
-        }
     }
 
 }

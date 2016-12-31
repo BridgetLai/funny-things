@@ -1,20 +1,17 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.learn.project</groupId>
-    <artifactId>web-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>
-  
-  <!-- groupId 与 version 会继承 parent -->
-  <artifactId>web-service-api</artifactId>
-  <name>web-service-api</name>
-  <url>http://maven.apache.org</url>
-  <packaging>jar</packaging>
- 
- 
-  <dependencies>
-  </dependencies>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.learn.project</groupId>
+        <artifactId>web-service</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <!-- groupId 与 version 会继承 parent -->
+    <artifactId>web-service-api</artifactId>
+
+    <url>http://maven.apache.org</url>
+    <packaging>jar</packaging>
 </project>
