@@ -12,7 +12,6 @@
     <!-- groupId 与 version 会继承 parent -->
     <artifactId>web-service-svc</artifactId>
 
-    <url>http://maven.apache.org</url>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -75,5 +74,17 @@
             <version>3.4.6</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.6.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 </project>

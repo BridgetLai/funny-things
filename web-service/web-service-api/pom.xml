@@ -12,6 +12,14 @@
     <!-- groupId 与 version 会继承 parent -->
     <artifactId>web-service-api</artifactId>
 
-    <url>http://maven.apache.org</url>
     <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- 使用spring-data-jpa -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>1.10.6.RELEASE</version>
+        </dependency>
+    </dependencies>
 </project>
