@@ -1,7 +1,7 @@
 package com.learn.project.model;
 
 
-public class User extends BaseModel {
+public class Customer extends BaseModel {
 
     /**
      *
@@ -39,7 +39,7 @@ public class User extends BaseModel {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "Customer{" +
                 "userName='" + userName + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
