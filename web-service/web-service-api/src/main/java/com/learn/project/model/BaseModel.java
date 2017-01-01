@@ -1,12 +1,10 @@
 package com.learn.project.model;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
+@MappedSuperclass
 public abstract class BaseModel implements Serializable {
 
     @Id
@@ -20,13 +18,16 @@ public abstract class BaseModel implements Serializable {
     private Date createTime; //创建时间
 
     @Column(name = "update_user")
-    private Date updateUser; //修改时间
+    private String updateUser; //修改用户
 
     @Column(name = "create_user")
-    private Date createUser; //创建时间
+    private String createUser; //创建用户
 
     @Column(name = "is_delete")
     private Boolean isDelete;    //是否删除
+
+    @Version
+    private Long version;
 
 
     public Long getId() {
@@ -53,19 +54,19 @@ public abstract class BaseModel implements Serializable {
         this.createTime = createTime;
     }
 
-    public Date getUpdateUser() {
+    public String getUpdateUser() {
         return updateUser;
     }
 
-    public void setUpdateUser(Date updateUser) {
+    public void setUpdateUser(String updateUser) {
         this.updateUser = updateUser;
     }
 
-    public Date getCreateUser() {
+    public String getCreateUser() {
         return createUser;
     }
 
-    public void setCreateUser(Date createUser) {
+    public void setCreateUser(String createUser) {
         this.createUser = createUser;
     }
 
@@ -75,5 +76,13 @@ public abstract class BaseModel implements Serializable {
 
     public void setDelete(Boolean delete) {
         isDelete = delete;
+    }
+
+    public Long getVersion() {
+        return version;
+    }
+
+    public void setVersion(Long version) {
+        this.version = version;
     }
 }

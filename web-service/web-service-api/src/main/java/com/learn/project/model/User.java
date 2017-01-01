@@ -1,15 +1,24 @@
 package com.learn.project.model;
 
 
-public class Customer extends BaseModel {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "web_user")
+public class User extends BaseModel {
 
     /**
      *
      */
     private static final long serialVersionUID = 1L;
 
+    @Column(name = "user_name")
     private String userName;//用户名
+
     private String email;//邮箱
+
     private String password;//密码
 
 
@@ -39,7 +48,7 @@ public class Customer extends BaseModel {
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "User{" +
                 "userName='" + userName + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +

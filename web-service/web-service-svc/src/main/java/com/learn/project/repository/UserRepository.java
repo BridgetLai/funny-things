@@ -1,8 +1,8 @@
 package com.learn.project.repository;
 
-import com.learn.project.model.Customer;
-import org.springframework.data.repository.CrudRepository;
+import com.learn.project.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends CrudRepository<Customer, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
 
 }

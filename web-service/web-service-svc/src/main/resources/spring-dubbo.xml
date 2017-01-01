@@ -18,7 +18,7 @@
 
     <!-- 要暴露的服务接口 -->
     <!-- AA收款接口 -->
-    <dubbo:service interface="com.learn.project.service.IUserService" ref="userServiceImpl"></dubbo:service>
+    <dubbo:service interface="com.learn.project.service.IUserCrudService" ref="userServiceImpl"></dubbo:service>
 
 
 </beans>

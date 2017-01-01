@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+
+
+
+
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 数据库连接 -->
+    <context:property-placeholder location="classpath:database.properties" ignore-unresolvable="true"/>
+
+    <!-- 数据源 -->
+    <bean id="dataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${dataSource_driverClassName}"/>
+        <property name="url" value="${dataSource_url}"/>
+        <property name="username" value="${dataSource_username}"/>
+        <property name="password" value="${dataSource_password}"/>
+    </bean>
+
+
+</beans>

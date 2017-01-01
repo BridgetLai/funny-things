@@ -15,7 +15,7 @@
 
     <dubbo:registry protocol="zookeeper" address="127.0.0.1" check="false"></dubbo:registry>
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
-    <dubbo:reference id="userServiceImpl" interface="com.learn.project.service.IUserService" timeout="10000"
+    <dubbo:reference id="userServiceImpl" interface="com.learn.project.service.IUserCrudService" timeout="10000"
                      check="false"/>
 
     <!-- 自动扫描所有注解该路径 -->
