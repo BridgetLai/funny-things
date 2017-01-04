@@ -1,9 +1,9 @@
-package com.learn.project.model;
+package com.learn.project.dto;
 
 import java.io.Serializable;
 import java.util.Date;
 
-public class BaseModel implements Serializable {
+public class BaseDto implements Serializable {
     /**
      *
      */

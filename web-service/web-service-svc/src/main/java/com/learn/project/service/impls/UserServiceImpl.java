@@ -1,4 +1,4 @@
-package com.learn.project.serviceImpl;
+package com.learn.project.service.impls;
 
 import com.learn.project.dao.IUserMapper;
 import com.learn.project.service.IUserService;
@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 
 @Component("userServiceImpl")
-public class UserImpl implements IUserService {
+public class UserServiceImpl implements IUserService {
 
     @Autowired
     private IUserMapper userMapper;

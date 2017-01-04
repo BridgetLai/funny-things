@@ -1,7 +1,7 @@
-package com.learn.project.model;
+package com.learn.project.dto;
 
 
-public class User extends BaseModel {
+public class UserDto extends BaseDto {
 
     /**
      *
@@ -39,10 +39,10 @@ public class User extends BaseModel {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "UserDto{" +
                 "userName='" + userName + '\'' +
                 ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
+                ", passwords='" + password + '\'' +
                 '}';
     }
 }
